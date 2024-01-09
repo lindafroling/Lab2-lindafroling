@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Quiz</title>
+    <link rel="stylesheet" href="yourname.css">
+</head>
+<body>
+        <div class="center-container">
+        <div class="headline">
+        <h1>Quiz Time!</h1>
+        <br>
+
+<!-- Visitor information -->
+        </div>
+        <form id="quizForm">
+            <div class="question-group-frame">
+                <div class="title">Visitor Information</div>
+            <div class="question-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required pattern="[A-Za-z]+" required class="stretch">
+                <span class="required">*</span>
+            </div>
+            
+            <div class="question-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required pattern="[A-Za-z]+" required class="stretch">
+                <span class="required">*</span>
+            </div>
+            
+            <div class="question-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required required class="stretch">
+                <span class="required">*</span>
+            </div>
+            </div>
+            <br>
+
+<!-- Questionnaire  -->
+
+            <h3>Quiz Questions</h3>
+
+            <div class="question">
+                <label for="question1">1. Which color do you get by mixing blue and yellow?</label>
+                <span class="required">*</span>
+                <br>
+                <input type="text" id="question1" name="question1" required class="stretch">
+            </div>
+
+            <div class="question">
+                <label for="question2">2. Which is not a  primary color?</label>
+                <span class="required">*</span>
+                <br>
+                <input type="radio" name="question2" value="green" required> Green
+                <input type="radio" name="question2" value="yellow" required> Yellow
+                <input type="radio" name="question2" value="blue" required> Blue
+            </div>
+
+            <div class="question">
+                <label for="question3">3. Select the colors that make up the national flag of Sweden</label>
+                <span class="required">*</span>
+                <br>
+                <input type="checkbox" name="question3[]" value="green" required> Green
+                <input type="checkbox" name="question3[]" value="yellow" required> Yellow
+                <input type="checkbox" name="question3[]" value="blue" required> Blue
+            </div>
+
+            <div class="question">
+                <label for="question4">4. What is the name of Sweden's capital? </label>
+                <span class="required">*</span>
+                <br>
+                <select id="question4" name="question4" required class="stretch">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="stockholm">Stockholm</option>
+                    <option value="goteborg">Göteborg</option>
+                    <option value="malmo">Malmö</option>
+                </select>
+            </div>            
+
+            <div class="question">
+                <label for="question5">5. Which swedish city is also known as little London?</label>
+                <span class="required">*</span>
+                <br>
+                <input type="text" id="question5" name="question5" required class="stretch">
+            </div>
+
+<!-- Submit button  -->
+
+
+            <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+
+<!-- Error- and success message  -->
+
+        <p id="errorMessage" style="color: red; display: none;">Please fill in all required fields.</p>
+        <p id="successMessage" style="color: green; display: none;">Quiz submitted successfully!</p>
+    </div>
+
+    <script src="yourname.js"></script>
+</body>
+</html>

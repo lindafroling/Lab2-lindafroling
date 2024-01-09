@@ -1,0 +1,62 @@
+body {
+    margin: 5px;
+    padding: 25px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Quiz headline */
+.headline {
+    text-align: center;
+    color: rgb(50, 50, 198);
+}
+
+/* Visitor information frame */
+
+.center-container{
+    position:center;
+}
+
+.question-group-frame {
+    border: 1px solid #000; 
+    padding: 25px; 
+    margin-bottom: 5px; 
+    position: relative; 
+}
+
+/* Visitor information headline */
+.title {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: white; 
+    padding: 0px;
+}
+
+/* Visitor information */
+.question-group {
+    margin-top: 20px; 
+    margin-bottom: 10px;
+    position: relative; 
+    display: left; 
+    align-items: left; 
+}
+
+/* Questionnaire */
+.question {
+    margin-top: 20px; 
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.required {
+    color: red;
+  }
+
+.stretch {
+    width: 94%; 
+}
